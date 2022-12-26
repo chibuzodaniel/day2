@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
     <title>Login</title>
   </head>
   <body>
     <div class="loginbox">
       <img src="./images/danny.png" class="avatar" />
       <h1>login here</h1>
-      <form method="post" name="form">
-        <p>username</p>
+      <form
+        method="post"
+        action="home.html"
+        name="form"
+        onsubmit="return validated()"
+      >
+        <p>Email or phone</p>
         <input
           type="text"
           class="usernamepassword"
           name="username"
           placeholder="Enter Username"
-          required
+          autocomplete="off"
         />
-        <div class="username_error">please fill in your username or email</div>
+        <div id="email_error">please fill in your username or email</div>
         <p>password</p>
         <input
           type="password"
           class="usernamepassword"
           name="password"
           placeholder="Enter Password"
-          required
         />
-        <div class="username_error">please fill in your password</div>
+        <div id="password_error">please fill in your password</div>
 
         <input type="submit" name="" value="Login" />
         <a href="#">lost your password?</a><br />
@@ -38,5 +41,6 @@
         ><a href="registration.html">SignUp</a>
       </form>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

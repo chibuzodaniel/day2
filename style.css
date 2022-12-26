@@ -82,8 +82,8 @@ span:hover {
   width: 100%;
   margin-top: 10px;
 }
-.loginbox .username_error,
-.password_error {
+.loginbox #email_error,
+#password_error {
   width: 265px;
   font-size: 12px;
   color: #c62828;
